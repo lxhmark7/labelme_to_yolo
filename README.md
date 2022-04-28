@@ -30,9 +30,9 @@ Convert object detect  json file that labeled by labelme  to yolo format;
 
 # 3.转换成yolo格式标注文件
 
-  1）复制图片到   images/train/demo1.jpg
+  1）复制图片到   images/train/demo1.jpg  
                  images/val/demo2.jpg  
-  2) 生成txt格式  labels/train/demo1.txt
+  2) 生成txt格式  labels/train/demo1.txt  
                  labels/val/demo2.txt
                
-
+最后生成yolo格式的数据集的目录两个：images和labels
