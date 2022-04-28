@@ -2,7 +2,8 @@
 Convert object detect  json file that labeled by labelme  to yolo format
 ;
 Labelme format: ((x1, y1), (x2, y2))     
-注：矩形框两种情况：1）起始点左上角，终点是右下角；   2）起始点左下角，终点右上角； 计算w,h时，需要使用np.abs();
+注：矩形框两种情况：1）起始点左上角，终点是右下角；   
+                  2）起始点左下角，终点右上角； 计算w,h时，需要使用np.abs();
 
 yolo format: (x_center, y_center, w, h)
 
