@@ -18,7 +18,7 @@ yolo format: (x_center, y_center, w, h)
 # 3.转换成yolo格式标注文件
 
   1）复制图片到   images/train/demo1.jpg
-                 images/val/demo2.jpg
+                 images/val/demo2.jpg  
   2) 生成txt格式  labels/train/demo1.txt
                  labels/val/demo2.txt
                  
