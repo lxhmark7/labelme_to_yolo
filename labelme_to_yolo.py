@@ -59,7 +59,7 @@ def json_to_txt(img_stem, label_json, label_flag, class_to_id):
         (x1, y1), (x2, y2) = obj['points']
         # Convert labelme rectangle format to yolo format(x_center, y_center, w, h), yolo range-[0, 1]
         x_center, y_center, w, h = convert([img_width, img_height], (x1, y1, x2, y2))
-        save_txt.write('\t'.join(map(str, [class_id, x_center, y_center, w, h])))
+        save_txt.write(' '.join(map(str, [class_id, x_center, y_center, w, h])))
         save_txt.write('\n')
     save_txt.close()
     file.close()
