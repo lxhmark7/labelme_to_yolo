@@ -105,8 +105,13 @@ if __name__ == '__main__':
     JPEGImages = 'JPEGImages'
     # Labelme generate json file directory
     Annotations = 'Annotations'
-    # class name list
+    # Class name list
     classes = ['A', 'B', 'C', 'D']   
+    # Generate classes.txt
+    file = open('classes.txt', 'w')
+    for class_name in classes:
+        file.write(class_name+'\n')
+        
     # Train percentage
     train_percentage = 0.6
 
