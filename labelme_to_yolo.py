@@ -111,7 +111,7 @@ if __name__ == '__main__':
     file = open('classes.txt', 'w')
     for class_name in classes:
         file.write(class_name+'\n')
-        
+    file.close()
     # Train percentage
     train_percentage = 0.6
 
