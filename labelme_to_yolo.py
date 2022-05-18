@@ -107,13 +107,14 @@ if __name__ == '__main__':
     Annotations = 'Annotations'
     # Class name list
     classes = ['A', 'B', 'C', 'D']   
+    # Train percentage
+    train_percentage = 0.7
+    
     # Generate classes.txt
     file = open('classes.txt', 'w')
     for class_name in classes:
         file.write(class_name+'\n')
     file.close()
-    # Train percentage
-    train_percentage = 0.6
 
     main(JPEGImages, Annotations, classes, train_percentage)
 
